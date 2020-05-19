@@ -1,48 +1,39 @@
 {
-  "name": "octobercms",
-  "description": "Free, open-source, self-hosted CMS platform based on the Laravel PHP Framework.",
+  "name": "october-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "directories": {
-    "test": "tests/js/cases",
-    "helpers": "tests/js/helpers"
+    "test": "tests"
   },
   "scripts": {
-    "test": "mocha --require @babel/register tests/js/cases/**/*.js"
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/octobercms/october.git"
+    "url": "git+https://github.com/abdullah10182/october_test.git"
   },
-  "contributors": [
-    {
-      "name": "Alexey Bobkov",
-      "email": "aleksey.bobkov@gmail.com"
-    },
-    {
-      "name": "Samuel Georges",
-      "email": "daftspunky@gmail.com"
-    },
-    {
-      "name": "Luke Towers",
-      "email": "octobercms@luketowers.ca",
-      "url": "https://luketowers.ca"
-    }
-  ],
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/octobercms/october/issues"
+    "url": "https://github.com/abdullah10182/october_test/issues"
   },
-  "homepage": "https://octobercms.com/",
+  "homepage": "https://github.com/abdullah10182/october_test#readme",
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/node": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/register": "^7.5.5",
-    "babel-plugin-module-resolver": "^3.2.0",
-    "chai": "^4.2.0",
-    "jquery": "^3.4.1",
-    "jsdom": "^15.1.1",
-    "mocha": "^6.2.0",
-    "sinon": "^7.4.1"
+    "babel-plugin-module-resolver": "^4.0.0",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.4",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
   }
 }
