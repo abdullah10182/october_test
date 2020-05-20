@@ -101,7 +101,7 @@
  * Auto hide navbar
  */
 jQuery(document).ready(function ($) {
-  console.log('test');
+  console.log('tekjst');
 });
 
 /***/ }),

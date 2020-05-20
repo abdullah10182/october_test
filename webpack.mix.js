@@ -15,21 +15,13 @@ mix.setPublicPath('./themes/triangon-theme/assets/')
 
 mix.js('./themes/triangon-theme/assets/javascript/app.js', 'dist/js').sass('./themes/triangon-theme/assets/sass/style.scss', 'dist/css');
 
-// mix.browserSync({
-//     proxy: 'localhost/sandbox/october-test',
-//     host: 'localhost/sandbox/october-test',
-//     notify: false,
-//     files: ['./themes/triangon-theme/assets/dist/css/*.css', './themes/triangon-theme/*/*.html', './themes/triangon-theme/assets/dist/js/*.js']
-// })
+mix.browserSync({
+    proxy: 'localhost/sandbox/october-test',
+    host: 'localhost/sandbox/october-test',
+    notify: false,
+    files: ['./themes/triangon-theme/assets/dist/css/*.css', './themes/triangon-theme/*/*.htm', './themes/triangon-theme/assets/dist/js/*.js']
+})
 
-
-mix.webpackConfig({
-    devServer: {
-        proxy: {
-            '*': 'localhost/sandbox/october-test'
-        }
-    }
-});
 
 // Full API
 // mix.js(src, output);

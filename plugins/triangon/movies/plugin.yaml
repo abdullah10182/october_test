@@ -1,0 +1,11 @@
+plugin:
+    name: 'triangon.movies::lang.plugin.name'
+    description: 'triangon.movies::lang.plugin.description'
+    author: triangon
+    icon: oc-icon-video-camera
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Movies
+        url: triangon/movies/movies
+        icon: icon-video-camera

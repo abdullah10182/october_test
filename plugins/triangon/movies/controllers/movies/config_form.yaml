@@ -1,0 +1,10 @@
+name: Movies
+form: $/triangon/movies/models/movie/fields.yaml
+modelClass: Triangon\Movies\Models\Movie
+defaultRedirect: triangon/movies/movies
+create:
+    redirect: 'triangon/movies/movies/update/:id'
+    redirectClose: triangon/movies/movies
+update:
+    redirect: triangon/movies/movies
+    redirectClose: triangon/movies/movies
